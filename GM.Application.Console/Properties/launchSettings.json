@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GM.Application.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "-f:InterfaceBBGMarketPriceTbmaT2 -20200302"
+    }
+  }
+}

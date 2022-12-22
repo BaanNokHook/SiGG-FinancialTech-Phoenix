@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+    <Version>2.14</Version>
+    <AssemblyVersion>2021.08.13.01</AssemblyVersion>
+    <FileVersion>2021.08.13.01</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Run_InterfaceSSMDExchangeRate.bat" />
+    <None Remove="Run_InterfaceSSMDFloatingIndexRate.bat" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GM.ClientAPI\GM.ClientAPI.csproj" />
+    <ProjectReference Include="..\GM.CommonLibs\GM.CommonLibs.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Run_InterfaceSSMDExchangeRate.bat" />
+    <Resource Include="Run_InterfaceSSMDFloatingIndexRate.bat" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Run_InterfaceFITSThorIndex.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Run_InterfaceSSMDThorRate.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

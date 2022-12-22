@@ -1,0 +1,1 @@
+﻿GM.Application.Console.exe -f:ExportNesToSFTP
